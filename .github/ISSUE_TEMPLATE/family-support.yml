@@ -1,0 +1,56 @@
+name: Family support request
+description: Report a Spellbook problem without sharing child data.
+title: "Support: "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Spellbook. This request is public. Do not include a child's name, photo, voice recording, school, home address, precise location, or other identifying information.
+  - type: dropdown
+    id: area
+    attributes:
+      label: What needs help?
+      options:
+        - Quest instructions or validation
+        - Camera or compass permission
+        - Voice or language sample
+        - Layout or accessibility
+        - Safety or privacy concern
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model
+      placeholder: Example: iPhone 16 Pro Max
+    validations:
+      required: true
+  - type: input
+    id: ios
+    attributes:
+      label: iOS version
+      placeholder: Example: iOS 26.2
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Include the quest title and what you expected, but no child-identifying information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: Tell us which buttons or quest steps led to the problem.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included a child's name, image, voice, school, address, precise location, or other identifying information.
+          required: true

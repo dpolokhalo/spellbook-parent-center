@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Spellbook Privacy Policy
+    url: https://dpolokhalo.github.io/spellbook-parent-center/privacy.html
+    about: Read how Spellbook handles camera, sensor, and on-device progress data.
